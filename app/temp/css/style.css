@@ -7201,6 +7201,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.error {
+  color: #e4612c; }
+
 *::-moz-selection {
   color: white;
   background: #e4612c; }
@@ -7232,9 +7235,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: -ms-flexbox;
   display: flex; }
   .checkbox-wrapper .checkbox {
-    -webkit-appearance: value;
-       -moz-appearance: value;
-            appearance: value;
     height: 20px;
     width: 20px;
     margin-right: 8px;
@@ -7242,7 +7242,8 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 1px solid #f0f0f0 !important;
-    border-radius: 5px !important; }
+    border-radius: 5px !important;
+    opacity: 0.5; }
 
 .footer {
   position: absolute;
@@ -7370,14 +7371,14 @@ a.text-dark:hover, a.text-dark:focus {
         border: 1px solid #e78128; }
 
 .login-footer {
-  max-width: 22rem;
+  max-width: 70%;
   margin: auto; }
   .login-footer p {
     opacity: 8;
     text-align: right;
     position: absolute;
     right: 15%;
-    bottom: 3.5rem; }
+    bottom: 3.9rem; }
     @media (max-width: 768px) {
       .login-footer p {
         right: 27%;

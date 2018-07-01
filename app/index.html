@@ -79,17 +79,17 @@
                             <div class="login-description-wrapper">
                                 <p class="login-description grey-text">Meld dich jetzt an um mit Victor deine immobile schneller und erfolgreicher zu vekaufen.</p>
                             </div>
-                            <form action="">
+                            <form class="form" id="login-id">
                                 <div class="validation">
                                     <p class="validation-message"></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="email-address" class="grey-text">Email Address</label>
-                                    <input type="email" class="form-control login-inputs" name="" id="email-address">
+                                    <input type="email" minlength="6" class="form-control login-inputs" name="" id="email-address">
                                 </div>
                                 <div class="form-group">
                                     <label for="password" class="grey-text">Password</label>
-                                    <input type="password" class="form-control login-inputs" id="password">
+                                    <input type="password" minlength="6" class="form-control login-inputs" id="password">
                                 </div>
                                 <p class="forget-password grey-text">Forget password?</p>
                                 <button class="btn btn-block">Sign In</button>
@@ -98,7 +98,7 @@
                     </div>
 
                     <div class="register-form-wrapper d-none">
-                    <div class="register-wrapper animation">
+                        <div class="register-wrapper animation">
                             <span class="register-text grey-text">Don't have an account.</span>
                             <button class="btn btn-victor" id="login">Login</button>
                         </div>
@@ -110,25 +110,22 @@
                             <div class="login-description-wrapper">
                                 <p class="register-description grey-text">Create your victor account.</p>
                             </div>
-                            <form action="">
-                                <div class="validation">
-                                    <p class="validation-message"></p>
-                                </div>
+                            <form class="form" id="register-id">
                                 <div class="form-group">
                                     <label for="username" class="grey-text">Username</label>
-                                    <input type="text" class="form-control form-inputs" name="" id="username">
+                                    <input type="text" minlength="4" class="form-control form-inputs" name="" id="username" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email-register" class="grey-text">Email Address</label>
-                                    <input type="email" class="form-control form-inputs" id="email-register">
+                                    <input type="email" minlength="5" class="form-control form-inputs" id="email-register" required >
                                 </div>
                                 <div class="form-group">
                                     <label for="password-register" class="grey-text">Password</label>
-                                    <input type="password" class="form-control form-inputs" id="password-register">
+                                    <input type="password" minlength="5" class="form-control form-inputs" id="password-register" required >
                                 </div>
                                 <div class="form-group">
                                     <label for="confirm-password" class="grey-text">Confirm Password</label>
-                                    <input type="password" class="form-control form-inputs" id="confirm-password">
+                                    <input type="password" minlength="5" class="form-control form-inputs" id="confirm-password" required >
                                 </div>
                                 <div class="checkbox-wrapper">
                                     <input type="checkbox" class="checkbox" name="" id="agree">

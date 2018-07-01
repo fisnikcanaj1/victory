@@ -91,7 +91,7 @@
 }
 
 .login-footer {
-    max-width: 22rem;
+    max-width: 70%;
     margin: auto;
 
     p {
@@ -99,7 +99,7 @@
         text-align: right;
         position: absolute;
         right: 15%;
-        bottom: 3.5rem;
+        bottom: 3.9rem;
 
         @media (max-width: 768px) {
             right: 27%;
