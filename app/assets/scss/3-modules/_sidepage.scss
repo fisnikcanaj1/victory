@@ -1,0 +1,57 @@
+
+.side-page-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    
+    
+    .side-page {
+        position: relative;
+        padding: 60rem 5rem 5rem 5rem;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        padding-left: 0;
+        padding-right: 0;
+        background-image: linear-gradient(10deg, #e3602bf0 0%, #e67b2bad 40%, #f8f9faab 100%),
+        url('../img/Imazhi majtas.jpg');
+        opacity: 0.9;
+
+        h1 {
+            text-align: right;
+            font-size: 4.5rem;
+            padding-bottom: 4.5rem;
+            .we-are-heading {
+                font-size: 2.8rem;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            
+            li {
+                 margin-left: 1.9rem;
+                a{
+                    font-size: .9rem;
+                    font-weight: 300;
+                    color: #fff;
+                }
+            }
+        }
+        .side-page-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 3rem 4rem;
+            
+        }
+        .login-footer {
+            margin-top: 13.4rem;
+        }
+    }
+
+    
+}

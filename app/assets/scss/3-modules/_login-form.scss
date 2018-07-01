@@ -1,0 +1,80 @@
+.form-wrapper {
+    
+    .register-wrapper {
+        padding: 2rem 0rem 6rem 0rem;
+        text-align: right;
+        
+        .register-text {
+            margin-right: 0.8rem;
+            font-size: 0.9rem;
+        }
+    
+    }
+
+    .logo-in {
+        max-width: 22rem;
+        margin: auto;
+
+        .logo-wrapper {
+            width: 4rem;
+            margin: 0 auto 3rem;
+            img {
+                width: 100%;
+            }
+        }
+
+        .login-description-wrapper {
+           width: 18rem;
+           margin: 0 auto 3rem;
+           text-align: center;
+           font-size: 1.1rem;
+           font-weight: 300;
+        }
+
+        label {
+           font-size: 0.92rem;
+           font-weight: 300;
+        }
+
+        input {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 0.6rem;
+        }
+
+        .forget-password {
+            padding-top: 0.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        button {
+            border-radius: 20px;
+            color: #fff;
+            padding: 0.7rem;
+            background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
+
+            &:hover {
+                color: #e78128!important;
+                background: transparent;
+                border: 1px solid #e78128;
+            }
+        }
+
+        .login-footer {
+           padding-top: 7.9rem;
+           opacity: 8;
+
+           p {
+               text-align: right;
+           }
+        }
+    }
+
+
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
