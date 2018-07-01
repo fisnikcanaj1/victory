@@ -29,7 +29,7 @@
         <meta name="keywords" content="Triton">
         <meta name="description" content="Triton test">
 
-        <link rel="stylesheet" href="assets/css/style-754b9c7797.css"/>
+        <link rel="stylesheet" href="assets/css/style-b15551d841.css"/>
 
         <script src="assets/js/Vendor-b1e74e4995.js"></script>
     </head>
@@ -63,12 +63,11 @@
             </div>
             <div class="col-md-5 col-12">
                 <div class="container form-wrapper">
-                <div class="login-wrapper d-none animation">
-                        <div class="register-wrapper">
+                    <div class="login-wrapper animation">
+                        <div class="register-wrapper ">
                             <span class="register-text grey-text">Don't have an account.</span>
                             <button class="btn btn-victor" id="register">Register</button>
                         </div>
-
                         <div class="logo-in d-flex flex-column justify-content-center">
                             <div class="logo-wrapper">
                                 <img src="assets/img/Logo.png" class="logo" alt="">
@@ -94,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class="register-form-wrapper">
+                    <div class="register-form-wrapper d-none">
                     <div class="register-wrapper animation">
                             <span class="register-text grey-text">Don't have an account.</span>
                             <button class="btn btn-victor" id="login">Login</button>
@@ -105,7 +104,7 @@
                                 <img src="assets/img/Logo.png" class="logo" alt="">
                             </div>
                             <div class="login-description-wrapper">
-                                <p class="login-description grey-text">Create your victor account.</p>
+                                <p class="register-description grey-text">Create your victor account.</p>
                             </div>
                             <form action="">
                                 <div class="validation">
@@ -127,8 +126,10 @@
                                     <label for="confirm-password" class="grey-text">Confirm Password</label>
                                     <input type="password" class="form-control form-inputs" id="confirm-password">
                                 </div>
-                                <input type="checkbox" name="" id="agree">
-                                <label for="agree" class="grey-text mb-4">I agree to the terms &amp; conditions</label>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox" name="" id="agree">
+                                    <label for="agree" class="grey-text mb-4">I agree to the terms &amp; conditions</label>
+                                </div>
                                 <button class="btn btn-block">Sign In</button>
                             </form>
                         </div>
