@@ -7307,7 +7307,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-top: 0.5rem;
     padding-bottom: 1.5rem; }
   .form-wrapper .logo-in button {
-    border-radius: 20px;
+    border-radius: 53px;
     color: #fff;
     padding: 0.7rem;
     background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
