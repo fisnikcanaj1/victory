@@ -7313,7 +7313,9 @@ a.text-dark:hover, a.text-dark:focus {
     background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
     background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
     -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in; }
+    transition: all 0.3s ease-in;
+    -webkit-box-shadow: 1px 5px 27px #e8862a70;
+            box-shadow: 1px 5px 27px #e8862a70; }
     .form-wrapper .logo-in button:hover {
       color: #e78128 !important;
       background: transparent;

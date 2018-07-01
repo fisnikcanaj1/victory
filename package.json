@@ -8,6 +8,7 @@
   "dependencies": {
     "bootstrap": "^4.1.1",
     "gulp-watch": "^5.0.0",
+    "jquery-validation": "^1.17.0",
     "normalize.css": "^7.0.0",
     "waypoints": "^4.0.1"
   },

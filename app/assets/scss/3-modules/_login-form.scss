@@ -58,6 +58,7 @@
             padding: 0.7rem;
             background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
             transition: all 0.3s ease-in;
+            box-shadow: 1px 5px 27px #e8862a70;
             &:hover {
                 color: #e78128!important;
                 background: transparent;
