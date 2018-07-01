@@ -1,7 +1,6 @@
 import $ from 'jquery';
-import { log } from 'util';
+// import { log } from 'util';
 
-// console.log('Hello');
 class Validator {
     constructor() {
         this.inputs = $('.login-inputs');

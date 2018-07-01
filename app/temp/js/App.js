@@ -13001,11 +13001,15 @@ var _Validator = __webpack_require__(4);
 
 var _Validator2 = _interopRequireDefault(_Validator);
 
-__webpack_require__(9);
+var _SwapContent = __webpack_require__(5);
+
+var _SwapContent2 = _interopRequireDefault(_SwapContent);
+
+__webpack_require__(10);
 
 __webpack_require__(2);
 
-__webpack_require__(10);
+__webpack_require__(11);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13013,9 +13017,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // new RevealOnScroll($(".feature-item"), '85%');
 // new RevealOnScroll($(".testimonial"), '85%');
 // new StickyHeader();
-// import RevealOnScroll from './modules/RevealOnScroll';
 new _Validator2.default();
-// import $ from 'jquery';
+// import $ from 'jquery'; 
+// import RevealOnScroll from './modules/RevealOnScroll';
+
+new _SwapContent2.default();
 
 /***/ }),
 /* 4 */
@@ -13034,13 +13040,12 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _util = __webpack_require__(5);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// console.log('Hello');
+// import { log } from 'util';
+
 var Validator = function () {
     function Validator() {
         _classCallCheck(this, Validator);
@@ -13075,6 +13080,68 @@ exports.default = Validator;
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _util = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var SwapContent = function () {
+    function SwapContent() {
+        _classCallCheck(this, SwapContent);
+
+        this.registerClicked = (0, _jquery2.default)('#register');
+        this.loginClicked = (0, _jquery2.default)('#login');
+        this.swapToRegister();
+        this.swapToLogin();
+    }
+
+    _createClass(SwapContent, [{
+        key: 'swapToRegister',
+        value: function swapToRegister() {
+            var $registerClicked = this.registerClicked;
+
+            $registerClicked.on('click', function () {
+                (0, _jquery2.default)('.login-wrapper').addClass('d-none');
+                (0, _jquery2.default)('.register-form-wrapper').removeClass('d-none');
+                (0, _jquery2.default)('.register-form-wrapper').addClass('animation');
+            });
+        }
+    }, {
+        key: 'swapToLogin',
+        value: function swapToLogin() {
+            var $loginClicked = this.loginClicked;
+
+            $loginClicked.on('click', function () {
+                (0, _jquery2.default)('.login-wrapper').removeClass('d-none');
+                (0, _jquery2.default)('.register-form-wrapper').addClass('d-none');
+                (0, _jquery2.default)('.register-form-wrapper').addClass('animation');
+            });
+        }
+    }]);
+
+    return SwapContent;
+}();
+
+exports.default = SwapContent;
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -13602,7 +13669,7 @@ function isPrimitive(arg) {
 }
 exports.isPrimitive = isPrimitive;
 
-exports.isBuffer = __webpack_require__(7);
+exports.isBuffer = __webpack_require__(8);
 
 function objectToString(o) {
   return Object.prototype.toString.call(o);
@@ -13646,7 +13713,7 @@ exports.log = function() {
  *     prototype.
  * @param {function} superCtor Constructor function to inherit prototype from.
  */
-exports.inherits = __webpack_require__(8);
+exports.inherits = __webpack_require__(9);
 
 exports._extend = function(origin, add) {
   // Don't do anything if add isn't an object
@@ -13664,10 +13731,10 @@ function hasOwnProperty(obj, prop) {
   return Object.prototype.hasOwnProperty.call(obj, prop);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(7)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -13857,7 +13924,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = function isBuffer(arg) {
@@ -13868,7 +13935,7 @@ module.exports = function isBuffer(arg) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 if (typeof Object.create === 'function') {
@@ -13897,7 +13964,7 @@ if (typeof Object.create === 'function') {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -17830,7 +17897,7 @@ if (typeof Object.create === 'function') {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

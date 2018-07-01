@@ -7201,6 +7201,14 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+*::-moz-selection {
+  color: white;
+  background: #e4612c; }
+
+*::selection {
+  color: white;
+  background: #e4612c; }
+
 * {
   font-family: 'Ubuntu', sans-serif; }
 
@@ -7270,56 +7278,79 @@ a.text-dark:hover, a.text-dark:focus {
     .side-page-wrapper .side-page .login-footer {
       margin-top: 13.4rem; }
 
-.form-wrapper .register-wrapper {
-  padding: 2rem 0rem 6rem 0rem;
-  text-align: right; }
-  .form-wrapper .register-wrapper .register-text {
-    margin-right: 0.8rem;
-    font-size: 0.9rem; }
-    @media (max-width: 330px) {
-      .form-wrapper .register-wrapper .register-text {
-        display: block;
-        margin-right: 0; } }
+.form-wrapper {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-animation: SHW .5s;
+          animation: SHW .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+  .form-wrapper .animation {
+    -webkit-animation: SHW 1.5s;
+            animation: SHW 1.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
 
-.form-wrapper .logo-in {
-  max-width: 22rem;
-  margin: auto;
-  position: relative; }
-  .form-wrapper .logo-in .logo-wrapper {
-    width: 4rem;
-    margin: 0 auto 3rem; }
-    .form-wrapper .logo-in .logo-wrapper img {
-      width: 100%; }
-  .form-wrapper .logo-in .login-description-wrapper {
-    width: 18rem;
-    margin: 0 auto 3rem;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 300; }
-  .form-wrapper .logo-in label {
-    font-size: 0.92rem;
-    font-weight: 300; }
-  .form-wrapper .logo-in input {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 0.6rem; }
-  .form-wrapper .logo-in .forget-password {
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem; }
-  .form-wrapper .logo-in button {
-    border-radius: 53px;
-    color: #fff;
-    padding: 0.7rem;
-    background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
-    background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    -webkit-box-shadow: 1px 5px 27px #e8862a70;
-            box-shadow: 1px 5px 27px #e8862a70; }
-    .form-wrapper .logo-in button:hover {
-      color: #e78128 !important;
-      background: transparent;
-      border: 1px solid #e78128; }
+@-webkit-keyframes SHW {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes SHW {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .form-wrapper .register-wrapper {
+    padding: 2rem 0rem 6rem 0rem;
+    text-align: right; }
+    .form-wrapper .register-wrapper .register-text {
+      margin-right: 0.8rem;
+      font-size: 0.9rem; }
+      @media (max-width: 330px) {
+        .form-wrapper .register-wrapper .register-text {
+          display: block;
+          margin-right: 0; } }
+  .form-wrapper .logo-in {
+    max-width: 22rem;
+    margin: auto;
+    position: relative; }
+    .form-wrapper .logo-in .logo-wrapper {
+      width: 4rem;
+      margin: 0 auto 3rem; }
+      .form-wrapper .logo-in .logo-wrapper img {
+        width: 100%; }
+    .form-wrapper .logo-in .login-description-wrapper {
+      width: 18rem;
+      margin: 0 auto 3rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 300; }
+    .form-wrapper .logo-in label {
+      font-size: 0.92rem;
+      font-weight: 300; }
+    .form-wrapper .logo-in input {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 0.6rem; }
+    .form-wrapper .logo-in .forget-password {
+      padding-top: 0.5rem;
+      padding-bottom: 1.5rem; }
+    .form-wrapper .logo-in button {
+      border-radius: 53px;
+      color: #fff;
+      padding: 0.7rem;
+      background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
+      background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
+      -webkit-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      -webkit-box-shadow: 1px 5px 27px #e8862a70;
+              box-shadow: 1px 5px 27px #e8862a70; }
+      .form-wrapper .logo-in button:hover {
+        color: #e78128 !important;
+        background: transparent;
+        border: 1px solid #e78128; }
 
 .login-footer {
   max-width: 22rem;
@@ -7350,3 +7381,8 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #cccccc;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.transition {
+  max-height: 0px;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in; }
