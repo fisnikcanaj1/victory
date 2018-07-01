@@ -7202,7 +7202,8 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 .error {
-  color: #e4612c; }
+  color: #e4612c;
+  margin-bottom: 0; }
 
 *::-moz-selection {
   color: white;
@@ -7246,6 +7247,16 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 5px !important;
     opacity: 0.5; }
 
+.less-margin-bottom {
+  position: relative; }
+  @media (max-width: 1600px) {
+    .less-margin-bottom {
+      margin-bottom: 0.5vh; } }
+  .less-margin-bottom label.error {
+    position: absolute;
+    top: 40px;
+    right: 0.4rem; }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -7262,13 +7273,15 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 60rem 5rem 5rem 5rem;
     background-repeat: no-repeat;
     min-height: 100vh;
-    width: 100%;
     background-position: center;
     background-size: cover;
     padding-left: 0;
     padding-right: 0;
     background-image: linear-gradient(10deg, #e3602bf0 0%, #e67b2bad 40%, #f8f9faab 100%), url("../img/Imazhi majtas.jpg");
     opacity: 0.9; }
+    @media (max-width: 160rem) {
+      .side-page-wrapper .side-page {
+        padding: 0 5rem 5rem 0; } }
     .side-page-wrapper .side-page h1 {
       text-align: right;
       font-size: 4.5rem;
@@ -7282,7 +7295,8 @@ a.text-dark:hover, a.text-dark:focus {
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      margin-bottom: 0; }
       .side-page-wrapper .side-page ul li {
         margin-left: 4%; }
         .side-page-wrapper .side-page ul li a {
@@ -7294,6 +7308,9 @@ a.text-dark:hover, a.text-dark:focus {
       bottom: 0;
       width: 100%;
       padding: 3rem 4rem; }
+      @media (max-width: 1600px) {
+        .side-page-wrapper .side-page .side-page-content {
+          padding: 2.1rem 3rem; } }
     .side-page-wrapper .side-page .login-footer {
       margin-top: 13.4rem; }
 
@@ -7324,9 +7341,15 @@ a.text-dark:hover, a.text-dark:focus {
   .form-wrapper .register-wrapper {
     padding: 2rem 0rem 6rem 0rem;
     text-align: right; }
+    @media (max-width: 160rem) {
+      .form-wrapper .register-wrapper {
+        padding: 2vh 0rem 2vh 0rem; } }
     .form-wrapper .register-wrapper .register-text {
       margin-right: 0.8rem;
       font-size: 0.9rem; }
+      @media (max-width: 160rem) {
+        .form-wrapper .register-wrapper .register-text {
+          margin-right: 0.8vh; } }
       @media (max-width: 360px) {
         .form-wrapper .register-wrapper .register-text {
           display: block;
@@ -7335,9 +7358,16 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: 22rem;
     margin: auto;
     position: relative; }
+    @media (max-height: 160rem) {
+      .form-wrapper .logo-in {
+        min-height: calc(100vh - 208px); } }
     .form-wrapper .logo-in .logo-wrapper {
       width: 4rem;
       margin: 0 auto 3rem; }
+      @media (max-width: 160rem) {
+        .form-wrapper .logo-in .logo-wrapper {
+          margin: 0 auto 1vh;
+          width: 3rem; } }
       .form-wrapper .logo-in .logo-wrapper img {
         width: 100%; }
     .form-wrapper .logo-in .login-description-wrapper {
@@ -7346,20 +7376,34 @@ a.text-dark:hover, a.text-dark:focus {
       text-align: center;
       font-size: 1.1rem;
       font-weight: 300; }
+      @media (max-width: 160rem) {
+        .form-wrapper .logo-in .login-description-wrapper {
+          margin: 0 auto -1vh; } }
     .form-wrapper .logo-in label {
       font-size: 0.92rem;
       font-weight: 300; }
+      @media (max-width: 1600px) {
+        .form-wrapper .logo-in label {
+          font-size: 0.82rem; } }
     .form-wrapper .logo-in input {
       background-color: #f0f0f0;
       border: none;
       padding: 0.6rem; }
+      @media (max-width: 1600px) {
+        .form-wrapper .logo-in input {
+          padding: 0.4rem; } }
     .form-wrapper .logo-in .forget-password {
       padding-top: 0.5rem;
       padding-bottom: 1.5rem; }
+      @media (max-width: 160rem) {
+        .form-wrapper .logo-in .forget-password {
+          font-size: 0.85rem;
+          padding-top: 0.1vh;
+          padding-bottom: 0.3vh; } }
     .form-wrapper .logo-in button {
       border-radius: 53px;
       color: #fff;
-      padding: 0.7rem;
+      padding: 0.6rem;
       background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
       background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
       -webkit-transition: all 0.3s ease-in;
@@ -7379,7 +7423,8 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: right;
     position: absolute;
     right: 15%;
-    bottom: 3.9rem; }
+    bottom: 2.1rem;
+    font-size: 0.8rem; }
     @media (max-width: 768px) {
       .login-footer p {
         right: 27%;
@@ -7405,6 +7450,9 @@ a.text-dark:hover, a.text-dark:focus {
   max-height: 0px;
   -webkit-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in; }
+
+.register-form-wrapper .register-form-wrapper {
+  min-height: calc(100vh - 208px); }
 
 .register-form-wrapper .register-description {
   font-size: 1.25rem; }
