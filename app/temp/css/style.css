@@ -7257,7 +7257,7 @@ a.text-dark:hover, a.text-dark:focus {
           -ms-flex-pack: end;
               justify-content: flex-end; }
       .side-page-wrapper .side-page ul li {
-        margin-left: 1.9rem; }
+        margin-left: 4%; }
         .side-page-wrapper .side-page ul li a {
           font-size: .9rem;
           font-weight: 300;
@@ -7276,10 +7276,15 @@ a.text-dark:hover, a.text-dark:focus {
   .form-wrapper .register-wrapper .register-text {
     margin-right: 0.8rem;
     font-size: 0.9rem; }
+    @media (max-width: 330px) {
+      .form-wrapper .register-wrapper .register-text {
+        display: block;
+        margin-right: 0; } }
 
 .form-wrapper .logo-in {
   max-width: 22rem;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
   .form-wrapper .logo-in .logo-wrapper {
     width: 4rem;
     margin: 0 auto 3rem; }
@@ -7306,16 +7311,38 @@ a.text-dark:hover, a.text-dark:focus {
     color: #fff;
     padding: 0.7rem;
     background: -webkit-gradient(linear, left top, right top, from(#e4612c), to(#e8862a));
-    background: linear-gradient(to right, #e4612c 0%, #e8862a 100%); }
+    background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
     .form-wrapper .logo-in button:hover {
       color: #e78128 !important;
       background: transparent;
       border: 1px solid #e78128; }
-  .form-wrapper .logo-in .login-footer {
-    padding-top: 7.9rem;
-    opacity: 8; }
-    .form-wrapper .logo-in .login-footer p {
-      text-align: right; }
+
+.login-footer {
+  max-width: 22rem;
+  margin: auto; }
+  .login-footer p {
+    opacity: 8;
+    text-align: right;
+    position: absolute;
+    right: 15%;
+    bottom: 3.5rem; }
+    @media (max-width: 768px) {
+      .login-footer p {
+        right: 27%;
+        bottom: -8.5rem;
+        width: 80%; } }
+    @media (max-width: 600px) {
+      .login-footer p {
+        right: 22%;
+        bottom: -8.5rem;
+        width: 80%; } }
+    @media (max-width: 500px) {
+      .login-footer p {
+        right: 17%;
+        bottom: -8.5rem;
+        width: 80%; } }
 
 .form-control:focus {
   border-color: #cccccc;

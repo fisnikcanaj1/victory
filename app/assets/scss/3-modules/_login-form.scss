@@ -7,13 +7,18 @@
         .register-text {
             margin-right: 0.8rem;
             font-size: 0.9rem;
+
+            @media (max-width: 330px) {
+                display: block;
+                margin-right: 0;
+            }
         }
-    
     }
 
     .logo-in {
         max-width: 22rem;
         margin: auto;
+        position: relative;
 
         .logo-wrapper {
             width: 4rem;
@@ -52,7 +57,7 @@
             color: #fff;
             padding: 0.7rem;
             background: linear-gradient(to right, #e4612c 0%, #e8862a 100%);
-
+            transition: all 0.3s ease-in;
             &:hover {
                 color: #e78128!important;
                 background: transparent;
@@ -60,17 +65,38 @@
             }
         }
 
-        .login-footer {
-           padding-top: 7.9rem;
-           opacity: 8;
-
-           p {
-               text-align: right;
-           }
-        }
+        
     }
 
+}
 
+.login-footer {
+    max-width: 22rem;
+    margin: auto;
+
+    p {
+        opacity: 8;
+        text-align: right;
+        position: absolute;
+        right: 15%;
+        bottom: 3.5rem;
+
+        @media (max-width: 768px) {
+            right: 27%;
+            bottom: -8.5rem;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            right: 22%;
+            bottom: -8.5rem;
+            width: 80%;
+        }
+        @media (max-width: 500px) {
+            right: 17%;
+            bottom: -8.5rem;
+            width: 80%;
+        }
+    }
 }
 
 .form-control:focus {
