@@ -7220,6 +7220,7 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.95; }
 
 .btn-victor {
+  width: 7.5rem;
   color: #e78128;
   background: transparent;
   padding: 0.3rem 1.5rem;
@@ -7326,7 +7327,7 @@ a.text-dark:hover, a.text-dark:focus {
     .form-wrapper .register-wrapper .register-text {
       margin-right: 0.8rem;
       font-size: 0.9rem; }
-      @media (max-width: 330px) {
+      @media (max-width: 360px) {
         .form-wrapper .register-wrapper .register-text {
           display: block;
           margin-right: 0; } }
