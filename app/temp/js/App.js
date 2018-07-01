@@ -13635,6 +13635,7 @@ new _SwapContent2.default();
         }
     }
 });
+
 (0, _jquery2.default)("#register-id").validate({
     rules: {
         username: {
