@@ -42,13 +42,13 @@
         }
     }
 
-    .logo-in {
+    .login-wrapper-div {
         max-width: 22rem;
         margin: auto;
         position: relative;
 
         @media (max-height: 160rem) {
-            min-height: calc(100vh - 208px);
+            min-height: calc(100vh - 150px);
         }
 
         .logo-wrapper {
@@ -88,7 +88,7 @@
         input {
             background-color: #f0f0f0;
             border: none;
-            padding: 0.6rem;
+            padding: 0.7rem;
 
             @media (max-width: 1600px) {
                 padding: 0.4rem
@@ -142,17 +142,20 @@
 
         @media (max-width: 768px) {
             right: 27%;
-            bottom: -8.5rem;
+            padding-bottom: 2px;
+            bottom: -51px;
             width: 80%;
         }
         @media (max-width: 600px) {
             right: 22%;
-            bottom: -8.5rem;
+            padding-bottom: 2px;
+            bottom: -51px;
             width: 80%;
         }
         @media (max-width: 500px) {
             right: 17%;
-            bottom: -8.5rem;
+            padding-bottom: 2px;
+            bottom: -51px;
             width: 80%;
         }
     }
