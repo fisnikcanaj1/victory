@@ -6381,6 +6381,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-size: cover;
     padding-left: 0;
     padding-right: 0;
+    background-image: url("../img/Imazhi majtas.jpg");
     background-image: linear-gradient(10deg, #e3602bf0 0%, #e67b2bad 40%, #f8f9faab 100%), url("../img/Imazhi majtas.jpg");
     opacity: 0.9; }
     @media (max-width: 160rem) {
