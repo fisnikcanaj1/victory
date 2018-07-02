@@ -6503,33 +6503,15 @@ a.text-dark:hover, a.text-dark:focus {
         border: 1px solid #e78128; }
 
 .login-footer {
-  max-width: 70%;
-  margin: auto; }
+  max-width: 22rem;
+  position: relative;
+  margin: 1.0rem auto; }
   .login-footer p {
     opacity: 8;
     text-align: right;
     position: absolute;
-    right: 15%;
-    bottom: 2.1rem;
+    right: 0%;
     font-size: 0.8rem; }
-    @media (max-width: 768px) {
-      .login-footer p {
-        right: 27%;
-        padding-bottom: 2px;
-        bottom: -51px;
-        width: 80%; } }
-    @media (max-width: 600px) {
-      .login-footer p {
-        right: 22%;
-        padding-bottom: 2px;
-        bottom: -51px;
-        width: 80%; } }
-    @media (max-width: 500px) {
-      .login-footer p {
-        right: 17%;
-        padding-bottom: 2px;
-        bottom: -51px;
-        width: 80%; } }
 
 .form-control:focus {
   border-color: #cccccc;
@@ -6541,7 +6523,7 @@ a.text-dark:hover, a.text-dark:focus {
   transition: all 0.8s ease-in; }
 
 .register-form-wrapper .register-form-wrapper {
-  min-height: calc(100vh - 208px); }
+  min-height: calc(100vh - 150px); }
 
 .register-form-wrapper .register-description {
   font-size: 1.25rem; }

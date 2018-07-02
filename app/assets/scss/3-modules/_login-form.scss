@@ -129,35 +129,16 @@
 }
 
 .login-footer {
-    max-width: 70%;
-    margin: auto;
-
+    max-width: 22rem;
+    position: relative;
+    margin: 1.0rem auto;
+    
     p {
         opacity: 8;
         text-align: right;
         position: absolute;
-        right: 15%;
-        bottom: 2.1rem;
+        right: 0%;
         font-size: 0.8rem;
-
-        @media (max-width: 768px) {
-            right: 27%;
-            padding-bottom: 2px;
-            bottom: -51px;
-            width: 80%;
-        }
-        @media (max-width: 600px) {
-            right: 22%;
-            padding-bottom: 2px;
-            bottom: -51px;
-            width: 80%;
-        }
-        @media (max-width: 500px) {
-            right: 17%;
-            padding-bottom: 2px;
-            bottom: -51px;
-            width: 80%;
-        }
     }
 }
 
