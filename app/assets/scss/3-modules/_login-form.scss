@@ -19,14 +19,11 @@
              opacity: 1
          }
      }
+
     .register-wrapper {
-        padding: 2rem 0rem 6rem 0rem;
+        padding: 2vh 0rem 2vh 0rem;
         text-align: right;
         
-        @media(max-width: 160rem) {
-            padding: 2vh 0rem 2vh 0rem;
-        }
-
         .register-text {
             margin-right: 0.8rem;
             font-size: 0.9rem;
@@ -54,14 +51,14 @@
         .logo-wrapper {
             width: 4rem;
             margin: 0 auto 3rem;
-
-            @media (max-width: 160rem) {
-                margin: 0 auto 1vh;
-                 width: 3rem;
-            }
             
             img {
                 width: 100%;
+            }
+
+            @media (max-width: 1800px) {
+                margin: 0 auto 2vh;
+                width: 3rem;
             }
         }
 
@@ -72,8 +69,8 @@
            font-size: 1.1rem;
            font-weight: 300;
 
-           @media (max-width: 160rem) {
-                margin: 0 auto -1vh;
+           @media (max-width: 1800px) {
+                margin: 0 auto 1vh;
            }
         }
 
@@ -87,7 +84,8 @@
 
         input {
             background-color: #f0f0f0;
-            border: none;
+            border: none!important;
+            box-shadow: none!important;
             padding: 0.7rem;
 
             @media (max-width: 1600px) {
@@ -99,14 +97,12 @@
             padding-top: 0.5rem;
             padding-bottom: 1.5rem;
 
-            @media (max-width: 160rem) {
+            @media (max-width: 1600px) {
                 font-size: 0.85rem;
                 padding-top: 0.1vh;
                 padding-bottom: 0.3vh;
             }
         }
-
-
 
         button {
             border-radius: 53px;
@@ -123,30 +119,11 @@
             }
         }
 
-        
     }
 
 }
 
-.login-footer {
-    max-width: 22rem;
-    position: relative;
-    margin: 1.0rem auto;
-    
-    p {
-        opacity: 8;
-        text-align: right;
-        position: absolute;
-        right: 0%;
-        font-size: 0.8rem;
-    }
-}
 
-.form-control:focus {
-    border-color: #cccccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
 .transition {
     max-height: 0px;
