@@ -6,6 +6,7 @@
     border: 1px solid #e78128;
     font-size: 0.9rem;
     opacity: 0.8; 
+    box-shadow: none!important;
 
     &:hover {
         background-color: #e78128;
@@ -15,7 +16,7 @@
 
 .checkbox-wrapper {
     display: flex;
-
+    position: relative;
     .checkbox {
         height: 15px;
         width: 15px;
@@ -27,5 +28,9 @@
         border-radius: 5px!important;
         opacity: 0.5;
     }
-    
+    #agree-error {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+    }
 }
