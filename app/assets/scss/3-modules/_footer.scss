@@ -2,11 +2,15 @@
 .login-footer {
     max-width: 22rem;
     position: relative;
-    margin: 1.0rem auto;
+    margin: 0 auto;
+
+    @media (max-width: 1600px) {
+        padding-top: 0.8rem;
+    }
+
     p {
         opacity: 8;
         text-align: right;
-        position: absolute;
         right: 0%;
         font-size: 0.8rem;
     }

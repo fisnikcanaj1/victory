@@ -7286,11 +7286,13 @@ a.text-dark:hover, a.text-dark:focus {
 .login-footer {
   max-width: 22rem;
   position: relative;
-  margin: 1.0rem auto; }
+  margin: 0 auto; }
+  @media (max-width: 1600px) {
+    .login-footer {
+      padding-top: 0.8rem; } }
   .login-footer p {
     opacity: 8;
     text-align: right;
-    position: absolute;
     right: 0%;
     font-size: 0.8rem; }
 
