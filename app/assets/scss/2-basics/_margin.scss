@@ -9,6 +9,10 @@
             top: 40px;
             right: 0.4rem;
 
+            @media (min-width: 1600px) {
+                top: 45px;
+            }
+
             @media (max-width: 873px) {
                 font-size: 0.75rem!important;
             }

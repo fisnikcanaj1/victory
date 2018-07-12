@@ -1,5 +1,6 @@
 .form-wrapper {
     transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
     
      animation: SHW .5s;
      animation-fill-mode: both;

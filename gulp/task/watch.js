@@ -19,5 +19,7 @@ gulp.task('watch', function () {
     });
 });
 
-//Add image to compress new images
-gulp.task('default', ['watch', 'sass', 'html', 'scripts']);
+//  Add 'image' to compress new images
+// Add  to purge css 'purgecss'
+
+gulp.task('default', ['watch', 'html', 'sass', 'styles', 'scripts']);

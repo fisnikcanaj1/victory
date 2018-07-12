@@ -13620,35 +13620,14 @@ new _Validator2.default(); // import RevealOnScroll from './modules/RevealOnScro
 
 new _SwapContent2.default();
 
-(0, _jquery2.default)("#login-id").validate({
-    rules: {
-        username: {
-            required: true,
-            // Using the normalizer to trim the value of the element
-            // before validating it.
-            //
-            // The value of `this` inside the `normalizer` is the corresponding
-            // DOMElement. In this example, `this` references the `username` element.
-            normalizer: function normalizer(value) {
-                return _jquery2.default.trim(value);
-            }
-        }
-    }
-});
+(0, _jquery2.default)("#login-id").validate();
 
 (0, _jquery2.default)("#register-id").validate({
     rules: {
-        username: {
-            required: true,
-            // Using the normalizer to trim the value of the element
-            // before validating it.
-            //
-            // The value of `this` inside the `normalizer` is the corresponding
-            // DOMElement. In this example, `this` references the `username` element.
-            normalizer: function normalizer(value) {
-                return _jquery2.default.trim(value);
-            }
-        }
+        agree: "required"
+    },
+    messages: {
+        agree: "Please indicate that you accept the Terms and Conditions."
     }
 });
 
