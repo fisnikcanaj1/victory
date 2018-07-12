@@ -1,9 +1,9 @@
+/* purgecss start ignore */
 .less-margin-bottom {
     position: relative;
     @media (max-width: 1600px) {
         margin-bottom: 0.5vh;
     }
-
     label.error {
             position: absolute;
             top: 40px;
@@ -18,3 +18,4 @@
             }
     }
 }
+/* purgecss end ignore */

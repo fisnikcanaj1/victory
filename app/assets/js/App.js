@@ -5,7 +5,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'popper.js';
 import 'jquery-validation';
-import { log } from 'util';
+// import { log } from 'util';
 
 // var mobileMenu = new MobileMenu();
 // new RevealOnScroll($(".feature-item"), '85%');

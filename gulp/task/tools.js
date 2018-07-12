@@ -8,7 +8,7 @@ const gulp = require('gulp'),
     purgecss = require('gulp-purgecss');
 
 gulp.task('styles', function () {
-    gulp.src('./app/assets/css/**/*.css')
+    gulp.src('./app/assets/css/*.css')
         .pipe(postcss([autoPrefixer]))
         .pipe(
             purgecss({
@@ -23,12 +23,6 @@ gulp.task('sass', function () {
     gulp.src('./app/assets/scss/**/*.scss')
         .pipe(errorHendler())
         .pipe(sass())
-        .pipe(postcss([autoPrefixer]))
-        .pipe(
-            purgecss({
-                content: ['./app/*.html']
-            })
-        )
         .pipe(gulp.dest("./app/assets/css"));
 });
 

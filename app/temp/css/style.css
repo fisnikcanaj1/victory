@@ -432,6 +432,11 @@ input[type="button"].btn-block {
   .container {
     min-width: 992px !important; } }
 
+/* purgecss ignore */
+.error {
+  color: #e4612c;
+  margin-bottom: 0; }
+
 *::-moz-selection {
   color: white;
   background: #e4612c; }
@@ -447,6 +452,7 @@ input[type="button"].btn-block {
   color: #868787;
   opacity: 0.95; }
 
+/* purgecss start ignore */
 .btn-victor {
   width: 7.5rem;
   color: #e78128;
@@ -463,9 +469,6 @@ input[type="button"].btn-block {
     color: #fff; }
 
 .checkbox-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative; }
   .checkbox-wrapper .checkbox {
     height: 15px;
@@ -483,12 +486,37 @@ input[type="button"].btn-block {
       .checkbox-wrapper .checkbox {
         padding-bottom: 12px; } }
 
+#agree-error {
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 0px;
+  font-size: 0.8rem; }
+  @media (max-width: 933px) {
+    #agree-error {
+      font-size: 0.65rem; } }
+  @media (max-width: 800px) {
+    #agree-error {
+      bottom: -1px; } }
+
+/* purgecss end ignore */
+/* purgecss start ignore */
 .less-margin-bottom {
   position: relative; }
   @media (max-width: 1600px) {
     .less-margin-bottom {
       margin-bottom: 0.5vh; } }
+  .less-margin-bottom label.error {
+    position: absolute;
+    top: 40px;
+    right: 0.4rem; }
+    @media (min-width: 1600px) {
+      .less-margin-bottom label.error {
+        top: 45px; } }
+    @media (max-width: 873px) {
+      .less-margin-bottom label.error {
+        font-size: 0.75rem !important; } }
 
+/* purgecss end ignore */
 .login-footer {
   max-width: 22rem;
   position: relative;
