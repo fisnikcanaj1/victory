@@ -1,1 +1,2 @@
-// gi
+import 'lazysizes';
+import 'picturefill';
